@@ -4,11 +4,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 group :development do
-  gem 'activerecord-jdbcsqlite3-adapter'
+  gem 'activerecord-jdbcsqlite3-adapter', platforms: :jruby
 end
 
 group :production do
-  gem 'activerecord-jdbc-adapter', '~> 1.3'
+  gem 'activerecord-jdbc-adapter', '~> 1.3', platforms: :jruby
 end
 
 # Use SCSS for stylesheets
